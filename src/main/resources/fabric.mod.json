@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "lyusya",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Lyusya",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
@@ -12,26 +12,26 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/lyusya/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.lyusya.Lyusya"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.lyusya.LyusyaClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"lyusya.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "lyusya.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.15.0",
-		"minecraft": "~1.20.4",
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
